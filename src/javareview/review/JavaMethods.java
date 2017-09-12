@@ -33,6 +33,8 @@ public class JavaMethods {
         //create an object to run methods
         JavaMethods test = new JavaMethods();
         test.helloWorld();
-        test.helloWorld("Steve");
+        test.helloWorld("Moon");
+        int total = test.sumRange(5, 10);
+        System.out.println(total);
     }
 }
