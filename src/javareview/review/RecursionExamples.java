@@ -38,6 +38,24 @@ public class RecursionExamples {
             return fibR(n-1) + fibR(n-2);
         }
     }
+    
+    public int gcd(int a, int b){
+        //swap if a is lower than number
+        if(a<b){
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+        //check if we are done
+        if(b == 0){
+            return a;
+        } else{
+            //find new values for a and b
+            int r = a%b;
+            //calculate new GCD
+            return gcd(b,r);
+        }
+    }
 
     /**
      * @param args the command line arguments
@@ -57,5 +75,13 @@ public class RecursionExamples {
         System.out.println("1st: " + boundR2);
         int normR = test.fibR(6);
         System.out.println("6th: " + normR);
+        System.out.println("------------GCD Test");
+        System.out.println("GCD(1378944, 120)");
+        int gcd = test.gcd(1378944, 120);
+        System.out.println(gcd);
+        //THREE RULES OF RECURSION
+        //1. Function must make a call to itself
+        //2. Must have a base case (something that tells it when to stop)
+        //3. Each step "must" (most often) go closer to the base case ( i.e. Problem gets smaller)
     }
 }
