@@ -1,0 +1,7 @@
+6
+Lamont  (555)555-5555   adam_Lamont@wrdsb.ca
+Bob  (111)111-1111   bob@google.com
+Bill  (222)222-2222   bill@hotMail.com
+Cathy  (666)555-7777   cathy@yahoo.ca
+Marianne  (444)555-0000   marianne@wrdsb.ca
+Cathy2  (666)555-7777   cathy@yahoo.ca
